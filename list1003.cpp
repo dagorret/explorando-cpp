@@ -13,5 +13,19 @@ int main(int argc, char *argv[])
   while (std::cint >> x)
     data.push_back(x);
 
+  for (std::vector<int>::iterator start(data.begin()), end(data.end(); 
+       start != end;
+       /*Empy*/)
+    {
+      --end;
+      if (start != end)
+	{
+	  int tmp = *start;
+	  *start = *end;
+	  *end = tmp;
+	  ++start;
+	}
+    }
+
   return 0;
 }
