@@ -10,10 +10,10 @@ int main(int argc, char *argv[])
   std::vector<int> data;
   int x;
 
-  while (std::cint >> x)
+  while (std::cin >> x)
     data.push_back(x);
 
-  for (std::vector<int>::iterator start(data.begin()), end(data.end(); 
+  for (std::vector<int>::iterator start(data.begin()), end(data.end()); 
        start != end;
        /*Empy*/)
     {
