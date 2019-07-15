@@ -15,11 +15,11 @@ int main(int argc, char *argv[])
   std::vector<int>::iterator iter;
 
   // Imprimir el vector
-  for (std::vector<int>::iterator i(data.begin()); i != data.end(); ++i)
-	 std::cout << *i << '\n';
+  // for (std::vector<int>::iterator i(data.begin()); i != data.end(); ++i)
+  //	 std::cout << *i << '\n';
 
   for (iter = data.begin(); iter != data.end() and *iter == 0; ++iter)
-    /*empty*/
+    /*empty*/;
   if (iter == data.end())
     std::cout << "Data contiene todos ceros\n";
   else
