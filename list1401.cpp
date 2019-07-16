@@ -12,6 +12,8 @@ int main(int argc, char *argv[])
   while (std::cin >> word)
     ++counts[word];
 
-  //Todo Print the results
+  //Por cada pair de word/counts
+  for (std::map<std::string, int>::iterator iter(counts.begin()); iter != counts.end(); ++iter)
+    std::cout << iter->first << '\t' << iter->second  << "\n";
   return 0;
 }
