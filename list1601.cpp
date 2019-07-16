@@ -28,9 +28,8 @@ int main(int argc, char *argv[])
     else if (ch != ' ' and ch != '\n')
     {
       std::cout << '\a';
-      while (std::cin.get(ch) and ch != '\n') {
+      while (std::cin.get(ch) and ch != '\n') 
 	  /*Empty*/;
     }
   }
-  return 0;
 }
