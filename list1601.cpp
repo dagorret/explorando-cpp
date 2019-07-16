@@ -17,7 +17,16 @@ int main(int argc, char *argv[])
       while (std::cin.get(ch) and ch >= '0' and ch <= '9')
 	value = value * 10  + ch - '0';
     }
-
-
+    if (ch == '\n')
+    {
+      if (have_value)
+      {
+	std::cout << value << '\n';
+	have_value = false;
+      }
+    }
+	while (std::cin.get(ch) and ch != '\n') {
+	  /*Empty*/;
+	}
   return 0;
 }
