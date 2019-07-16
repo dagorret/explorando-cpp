@@ -1,4 +1,3 @@
-#include <iomanip>
 #include <iostream>
 #include <istream>
 #include <map>
@@ -14,6 +13,15 @@ int main(int argc, char *argv[])
 
  while (cin >> word)
    ++counts[word];
- 
-  return 0;
+
+ map<string, int>::iterator the(counts.find("La"));
+  
+ if (the == counts.end())
+   cout << "\"La\" no se encontró\n";
+ else if (the->second == 1)
+   cout << "\"La\" tiene " << the->second << " ocurrecia\n";
+ else
+   cout << "\"La\" tiene " << the->second << " ocurrencias\n";
+   
+ return 0;
 }
