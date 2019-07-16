@@ -23,6 +23,12 @@ int main(int argc, char *argv[])
   while (cin >> word)
     ++counts[word];
 
+  // Determinar el string mas largo
+  str_size longest;
+  for (count_iter iter(counts.begin()); iter != counts.end(); ++iter)
+    if (iter->first.size() > longest)
+      longest = iter->first.size();
+
 
   return 0;
 }
