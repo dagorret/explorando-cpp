@@ -29,6 +29,11 @@ int main(int argc, char *argv[])
     if (iter->first.size() > longest)
       longest = iter->first.size();
 
+  // Imprimir para cada pair
+  const int count_size(10);
+  for (count_iter iter(counts.begin()); iter != counts.end(); ++iter)
+    cout << setw(longest)    << left << iter->first 
+	 << setw(count_size) << right << iter->second << '\n';
 
   return 0;
 }
