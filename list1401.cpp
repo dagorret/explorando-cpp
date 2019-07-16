@@ -5,7 +5,6 @@
 #include <ostream>
 #include <iomanip>
 
-
 int main(int argc, char *argv[])
 {
   std::map<std::string, int> counts;
