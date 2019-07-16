@@ -25,8 +25,12 @@ int main(int argc, char *argv[])
 	have_value = false;
       }
     }
-	while (std::cin.get(ch) and ch != '\n') {
+    else if (ch != ' ' and ch != '\n')
+    {
+      std::cout << '\a';
+      while (std::cin.get(ch) and ch != '\n') {
 	  /*Empty*/;
-	}
+    }
+  }
   return 0;
 }
