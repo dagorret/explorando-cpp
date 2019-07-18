@@ -17,7 +17,10 @@ int main()
   count_map counts;
   string word;
 
+  // Leer palabras desde la entrada estandar y cuenta
+  // el números de veces que la palabra aparece
   string okay("ABCDEFGHIJKLMNOPQRSTUWXYZ"
 	      "abcdefghijklmnopqrstuwxyz"
 	      "01234567890-_");
+  
 }
