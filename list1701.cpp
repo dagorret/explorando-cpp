@@ -30,7 +30,7 @@ int main()
 	if (okay.find(*w) != string::npos)
 	  copy.push_back(*w);
     if (not copy.empty())
-      ++count[copy];
+      ++counts[copy];
   }
 
   // Determina la palabra mas larga
