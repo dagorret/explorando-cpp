@@ -41,9 +41,9 @@ int main()
 
   // Para cada par palabra/count
   const int count_size(10);
-  for (count_iter iter(counts.begin)); iter != counts.end(); ++iter)
+  for (count_iter iter(counts.begin()); iter != counts.end(); ++iter)
     cout << setw(longest)   << left  << iter->first
-         << setw(count_size << rigth << iter-second
+         << setw(count_size) << right << iter->second
 	 << '\n';
 		 
 }
