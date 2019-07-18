@@ -22,5 +22,28 @@ int main()
   string okay("ABCDEFGHIJKLMNOPQRSTUWXYZ"
 	      "abcdefghijklmnopqrstuwxyz"
 	      "01234567890-_");
-  
+
+  while (cin >> word) {
+    string copy;
+
+      for (string::iterator w(word.begin()); w != word.end(); ++w)
+	if (okay.find(*w) != string::npos)
+	  copy.push_back(*w);
+    if (not copy.empty())
+      ++count[copy];
+  }
+
+  // Determina la palabra mas larga
+  str_size longest(0);
+  for (count_iter iter(counts.begin()); iter != counts.end(); ++iter)     
+    if (iter->first.size() > longest)
+      longest = iter->first.size();
+
+  // Para cada par palabra/count
+  const int count_size(10);
+  for (count_iter iter(counts.begin)); iter != counts.end(); ++iter)
+    cout << setw(longest)   << left  << iter->first
+         << setw(count_size << rigth << iter-second
+	 << '\n';
+		 
 }
